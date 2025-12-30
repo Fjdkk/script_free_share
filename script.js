@@ -330,8 +330,8 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Guide link to switch tab and scroll to section
-document.querySelectorAll('.guide-link[data-tab]').forEach(link => {
+// Guide link and Contact link to switch tab and scroll to section
+document.querySelectorAll('.guide-link[data-tab], #contact-link[data-tab]').forEach(link => {
     link.addEventListener('click', function(e) {
         e.preventDefault();
         const targetTab = this.getAttribute('data-tab');
