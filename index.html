@@ -5,9 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Download Executor Tools V2.702 Android - PunkX, DeltaX, FluxusZ, Neutron</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reviews.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Animated Background Effects -->
+    <div class="aurora"></div>
+    <div class="mouse-glow"></div>
+    
+    <!-- Animated Background Particles -->
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+    
     <div class="container">
         <header>
             <div class="logo">
@@ -15,6 +32,13 @@
                 <h1>Roblox Download</h1>
             </div>
             <p class="subtitle">Tải Executor Tools V2.702 cho Android - Phiên bản mới nhất</p>
+            <div class="site-badges">
+                <span class="badge rating"><i class="fas fa-star"></i><span>Top #1 Roblox Script VN</span></span>
+                <span class="badge trust"><i class="fas fa-shield-alt"></i><span>Link an toàn, sạch quảng cáo</span></span>
+                <span class="badge users"><i class="fas fa-users"></i><span>10k+ người dùng tin tưởng</span></span>
+                <span class="badge update"><i class="fas fa-sync-alt"></i><span>Cập nhật mỗi ngày</span></span>
+                <span class="badge support"><i class="fas fa-headset"></i><span>Hỗ trợ nhanh 24/7</span></span>
+            </div>
             
             <!-- Header Actions - Contact Button -->
             <div class="header-actions">
@@ -25,21 +49,132 @@
             </div>
         </header>
 
+        <!-- Device Info Bar -->
+        <div class="device-info-bar">
+            <div class="device-info-container">
+                <div class="device-info-item">
+                    <i class="fas fa-desktop"></i>
+                    <div class="device-info-text">
+                        <span class="device-label">Thiết bị</span>
+                        <span class="device-value" id="device-type">Đang kiểm tra...</span>
+                    </div>
+                </div>
+                <div class="device-info-item">
+                    <i class="fas fa-globe"></i>
+                    <div class="device-info-text">
+                        <span class="device-label">Trình duyệt</span>
+                        <span class="device-value" id="browser-info">Đang kiểm tra...</span>
+                    </div>
+                </div>
+                <div class="device-info-item">
+                    <i class="fas fa-mobile-alt"></i>
+                    <div class="device-info-text">
+                        <span class="device-label">Hệ điều hành</span>
+                        <span class="device-value" id="os-info">Đang kiểm tra...</span>
+                    </div>
+                </div>
+                <div class="device-info-item">
+                    <i class="fas fa-wifi"></i>
+                    <div class="device-info-text">
+                        <span class="device-label">Kết nối</span>
+                        <span class="device-value" id="connection-info">Đang kiểm tra...</span>
+                    </div>
+                </div>
+                <div class="device-info-item">
+                    <i class="fas fa-clock"></i>
+                    <div class="device-info-text">
+                        <span class="device-label">Thời gian</span>
+                        <span class="device-value" id="current-time">00:00:00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="device-info-actions">
+                <button class="device-info-btn" id="refresh-device-info">
+                    <i class="fas fa-sync-alt"></i>
+                    <span>Làm mới</span>
+                </button>
+                <button class="device-info-btn" id="toggle-device-info">
+                    <i class="fas fa-chevron-up"></i>
+                    <span>Thu gọn</span>
+                </button>
+            </div>
+        </div>
+
         <main>
+            <div class="news-banner">
+                <div class="news-content">
+                    <i class="fas fa-bullhorn"></i>
+                    <span>Bản Tin: Đã cập nhật danh sách script ngày 01/01/2026. Xem mục Tải Script để biết chi tiết.</span>
+                </div>
+                <button class="close-btn" aria-label="Đóng bản tin">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="updates-ticker">
+                <div class="updates-track">
+                    <a class="update-item" data-tab="scripts" data-section="scripts-download"><i class="fas fa-fire"></i><span>Update Blox Fruits mới, fix lag</span></a>
+                    <a class="update-item" data-tab="executor" data-section="executor-download"><i class="fas fa-wrench"></i><span>Executor Android V2.702 tối ưu tốc độ</span></a>
+                    <a class="update-item" data-tab="guide" data-section="guide-video"><i class="fas fa-shield-alt"></i><span>Vượt link an toàn, không mã độc</span></a>
+                    <a class="update-item" data-tab="scripts" data-section="scripts-download"><i class="fas fa-star"></i><span>Top #1 Roblox Script VN</span></a>
+                </div>
+            </div>
+            <div class="image-news">
+                <button class="image-nav prev" aria-label="Trước"><i class="fas fa-chevron-left"></i></button>
+                <div class="image-list">
+                    <a class="image-item" data-tab="executor" data-section="executor-download">
+                        <div class="image-thumb">
+                            <img src="https://placehold.co/600x220/edf2ff/667eea?text=Executor+Update" alt="Executor Update">
+                        </div>
+                        <div class="image-caption"><i class="fas fa-wrench"></i><span>Executor Update</span></div>
+                    </a>
+                    <a class="image-item" data-tab="scripts" data-section="scripts-download">
+                        <div class="image-thumb">
+                            <img src="https://placehold.co/600x220/fff3cd/f5a623?text=Script+Hot+Premium" alt="Script Hot Premium">
+                        </div>
+                        <div class="image-caption"><i class="fas fa-crown"></i><span>Script Hot Premium</span></div>
+                    </a>
+                    <a class="image-item" data-tab="guide" data-section="guide-video">
+                        <div class="image-thumb">
+                            <img src="https://placehold.co/600x220/e8f5e9/28a745?text=H%C6%B0%E1%BB%9Bng+D%E1%BA%ABn+V%C6%B0%E1%BB%A3t+Link" alt="Hướng dẫn vượt link">
+                        </div>
+                        <div class="image-caption"><i class="fas fa-book-open"></i><span>Hướng dẫn vượt link</span></div>
+                    </a>
+                    <a class="image-item" data-tab="scripts" data-section="scripts-download">
+                        <div class="image-thumb">
+                            <img src="https://placehold.co/600x220/fde2e4/f5576c?text=S%E1%BB%B1+Ki%E1%BB%87n+%26+Khuy%E1%BA%BFn+M%E1%BA%A1i" alt="Sự kiện khuyến mại">
+                        </div>
+                        <div class="image-caption"><i class="fas fa-gift"></i><span>Sự kiện & Khuyến mại</span></div>
+                    </a>
+                </div>
+                <button class="image-nav next" aria-label="Sau"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="promo-marquee">
+                <div class="marquee-track">
+                    <a class="promo-item featured" data-tab="scripts" data-section="scripts-download"><i class="fas fa-crown"></i><span>GravityHub Premium</span></a>
+                    <a class="promo-item featured" data-tab="scripts" data-section="scripts-download"><i class="fas fa-meteor"></i><span>QuantumOnyx Premium</span></a>
+                    <a class="promo-item" data-tab="scripts" data-section="scripts-download"><i class="fas fa-banana"></i><span>BananaHub Premium</span></a>
+                    <a class="promo-item" data-tab="scripts" data-section="scripts-download"><i class="fas fa-tasks"></i><span>RaitoHub Premium</span></a>
+                    <a class="promo-item" data-tab="executor" data-section="executor-download"><i class="fab fa-android"></i><span>PunkX V2.702 Android</span></a>
+                    <a class="promo-item" data-tab="executor" data-section="executor-download"><i class="fab fa-android"></i><span>DeltaX V2.702 Android</span></a>
+                    <a class="promo-item" data-tab="executor-pc"><i class="fas fa-desktop"></i><span>Wave Executor PC</span></a>
+                    <a class="promo-item" data-tab="executor-pc"><i class="fas fa-desktop"></i><span>Solara Executor PC</span></a>
+                </div>
+            </div>
             <!-- Tab Navigation -->
             <div class="tabs-container">
                 <div class="tabs-wrapper">
-                    <div class="tab active" data-tab="scripts" data-tooltip="Tải Script Roblox và hướng dẫn sử dụng - Code hack game">
+                    <div class="tab active" data-tab="scripts" data-tooltip="Tải Script Roblox và hướng dẫn sử dụng - Code hack game" onclick="switchTab('scripts')">
                         <div class="tab-icon-wrapper">
                             <i class="fas fa-code"></i>
-                        </div>
+
+                    </div>
                         <div class="tab-content-wrapper">
                             <span class="tab-title">Script Roblox</span>
                             <span class="tab-subtitle">Code hack game & Hướng dẫn</span>
                         </div>
                         <div class="tab-indicator"></div>
                     </div>
-                    <div class="tab" data-tab="executor" data-tooltip="Tải Executor Tools cho Android - Công cụ chạy script">
+                    <div class="tab" data-tab="executor" data-tooltip="Tải Executor Tools cho Android - Công cụ chạy script" onclick="switchTab('executor')">
                         <div class="tab-icon-wrapper">
                             <i class="fas fa-tools"></i>
                         </div>
@@ -49,7 +184,17 @@
                         </div>
                         <div class="tab-indicator"></div>
                     </div>
-                    <div class="tab" data-tab="guide" data-tooltip="Hướng dẫn vượt link và các lưu ý quan trọng">
+                    <div class="tab" data-tab="executor-pc" data-tooltip="Tải Executor Tools cho PC - Công cụ chạy script trên máy tính" onclick="switchTab('executor-pc')">
+                        <div class="tab-icon-wrapper">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <div class="tab-content-wrapper">
+                            <span class="tab-title">Executor PC</span>
+                            <span class="tab-subtitle">Công cụ chạy script cho PC</span>
+                        </div>
+                        <div class="tab-indicator"></div>
+                    </div>
+                    <div class="tab" data-tab="guide" data-tooltip="Hướng dẫn vượt link và các lưu ý quan trọng" onclick="switchTab('guide')">
                         <div class="tab-icon-wrapper">
                             <i class="fas fa-book-open"></i>
                         </div>
@@ -445,8 +590,20 @@
                         </div>
                     </div>
                     
+                    <div class="filters-bar">
+                        <div class="tier-filters">
+                            <button class="tier-btn active" data-tier="all"><i class="fas fa-layer-group"></i> <span>Tất cả</span></button>
+                            <button class="tier-btn" data-tier="premium"><i class="fas fa-crown"></i> <span>Premium</span></button>
+                            <button class="tier-btn" data-tier="regular"><i class="fas fa-star"></i> <span>Thường</span></button>
+                        </div>
+                        <div class="search-wrapper">
+                            <i class="fas fa-search"></i>
+                            <input type="text" id="script-search" placeholder="Tìm theo chức năng hoặc tên script">
+                        </div>
+                    </div>
+
                     <div class="scripts-grid">
-                        <div class="script-card">
+                        <div class="script-card" data-tier="regular">
                             <div class="script-header">
                                 <i class="fas fa-gem"></i>
                                 <h3>Script BlueX-Hub</h3>
@@ -471,7 +628,7 @@
                             </a>
                         </div>
 
-                        <div class="script-card">
+                        <div class="script-card" data-tier="regular">
                             <div class="script-header">
                                 <i class="fas fa-gem"></i>
                                 <h3>Script Blox Fruits Specific</h3>
@@ -496,7 +653,7 @@
                             </a>
                         </div>
 
-                        <div class="script-card">
+                        <div class="script-card" data-tier="regular">
                             <div class="script-header">
                                 <i class="fas fa-gem"></i>
                                 <h3>Script TeddyHub</h3>
@@ -515,14 +672,14 @@
                                     <i class="fas fa-chevron-down"></i>
                                 </button>
                             </div>
-                            <a href="https://yeulink.com/QMSyzbSvLS" class="script-download-btn" data-script="security">
+                            <a href="https://yeulink.com/N5TBFncRU9" class="script-download-btn" data-script="security">
                                 <i class="fas fa-download"></i>
                                 <span>Tải Script</span>
                             </a>
                         </div>
                     
 
-                        <div class="script-card">
+                        <div class="script-card" data-tier="regular">
                             <div class="script-header">
                                 <i class="fas fa-gem"></i>
                                 <h3>Script WhiteX Trial </h3>
@@ -546,7 +703,7 @@
                             </a>
                         </div>
 
-                        <div class="script-card" style="position: relative;">
+                        <div class="script-card" style="position: relative;" data-tier="premium">
                             <div class="premium-badge" style="position: absolute; top: 15px; right: 15px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 6px 12px; border-radius: 20px; font-size: 11px; font-weight: 700; z-index: 10; box-shadow: 0 3px 10px rgba(245, 87, 108, 0.4); display: flex; align-items: center; gap: 5px;">
                                 <i class="fas fa-crown"></i>
                                 <span>PREMIUM</span>
@@ -657,6 +814,600 @@
                             </div>
                             <a href="https://oklink.cfd/vL10zgvbbgvbb" class="script-download-btn premium" data-script="premium">
                                 <i class="fas fa-crown"></i>
+                                <span>Tải Premium</span>
+                            </a>
+                        </div>
+
+                        <!-- redzHub -->
+                        <div class="script-card" style="position: relative;">
+                            <div class="premium-badge" style="position: absolute; top: 15px; right: 15px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 6px 12px; border-radius: 20px; font-size: 11px; font-weight: 700; z-index: 10; box-shadow: 0 3px 10px rgba(245, 87, 108, 0.4); display: flex; align-items: center; gap: 5px;">
+                                <i class="fas fa-crown"></i>
+                                <span>PREMIUM</span>
+                            </div>
+                            <div class="script-header">
+                                <i class="fas fa-gem"></i>
+                                <h3>redzHub - HUB SỐ 1 BLOX FRUITS</h3>
+                            </div>
+                            <div class="script-desc-wrapper">
+                                <div class="premium-notice" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 12px; border-radius: 8px; margin-bottom: 15px; text-align: center; font-weight: 600;">
+                                    <i class="fas fa-crown" style="margin-right: 8px;"></i>
+                                    <strong>Script Premium - Tính năng đầy đủ nhất!</strong>
+                                    <p style="margin: 8px 0 0 0; font-size: 13px; font-weight: 400; opacity: 0.95;">Nhấn nút "Tải Premium" bên dưới để tải script với đầy đủ tính năng cao cấp</p>
+                                </div>
+                                <p class="script-desc">
+                                    <strong>Auto Farm Level:</strong> Tự động nhận và hoàn thành 100% quest chain từ Sea 1 → Sea 3, farm XP max tốc độ 24/7.<br><br>
+                                    <strong>Auto Farm Boss:</strong> Target + kill tự động tất cả boss (Rip Indra, Dough King...), auto heal + dodge.<br><br>
+                                    <strong>Auto Farm Materials:</strong> Thu thập Dragon Scale, Fish Tail, Magma Ore, Scrap Metal tự động.<br><br>
+                                    <strong>Auto Farm Mastery:</strong> Spam tất cả moves của mọi fruit/sword/gun đến 100% mastery.<br><br>
+                                    <strong>Auto Raid/Dungeon:</strong> Clear full raid/dungeon, farm gear + fragments tự động.<br><br>
+                                    <strong>Full Teleport:</strong> Instant TP đến mọi island, event (Sea Beast, Mirage), tìm fruit legendary.<br><br>
+                                    <strong>ESP/Visuals:</strong> Wallhack player, fruit, chest, ship full map.
+                                </p>
+                                <button class="read-more-btn" onclick="toggleScriptDesc(this)">
+                                    <span class="read-more-text">Xem thêm</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </div>
+                            <a href="https://yeulink.com/2CUJi97aQA" class="script-download-btn premium" data-script="premium">
+                                <i class="fas fa-download"></i>
+                                <span>Tải Premium</span>
+                            </a>
+                        </div>
+
+                        <!-- tlredzScripts -->
+                        <div class="script-card">
+                            <div class="script-header">
+                                <i class="fas fa-leaf"></i>
+                                <h3>tlredzScripts - FARM NHẸ PIRATES</h3>
+                            </div>
+                            <div class="script-desc-wrapper">
+                                <p class="script-desc">
+                                    <strong>Auto Collect Nearest Fruits:</strong> Detect fruit gần nhất <1000 studs → teleport → pickup instant.<br><br>
+                                    <strong>Auto Mastery Spam:</strong> Spam Z/X/C/V moves liên tục để max mastery.<br><br>
+                                    <strong>Auto Quest Low-Level:</strong> Nhận + hoàn thành quest newbie Sea 1 (Bandits, Gorillas).<br><br>
+                                    <strong>Server Hop Low Players:</strong> Auto join server <10 players để farm safe.<br><br>
+                                    <strong>No GUI Lag:</strong> Script background, không UI nặng, CPU low.
+                                </p>
+                                <button class="read-more-btn" onclick="toggleScriptDesc(this)">
+                                    <span class="read-more-text">Xem thêm</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </div>
+                            <a href="https://yeulink.com/DIJR7PdLoe" class="script-download-btn" data-script="utility">
+                                <i class="fas fa-download"></i>
+                                <span>Tải Script</span>
+                            </a>
+                        </div>
+
+                        <!-- Rolls-Rocy -->
+                        <div class="script-card">
+                            <div class="script-header">
+                                <i class="fas fa-dice"></i>
+                                <h3>Rolls-Rocy - FRUIT ROLLING</h3>
+                            </div>
+                            <div class="script-desc-wrapper">
+                                <p class="script-desc">
+                                    <strong>Auto Roll Random Fruits:</strong> Mua spin fruits từ Blox Fruit Gacha liên tục đến khi ra Legendary/Mythical.<br><br>
+                                    <strong>Auto Farm Mastery All Fruits:</strong> Max mastery mọi fruits trong inventory.<br><br>
+                                    <strong>Auto Upgrade Stats:</strong> Phân bổ stats theo tỷ lệ 1:1:1:1 hoặc custom max melee/fruit.<br><br>
+                                    <strong>Fruit Bag Notifier:</strong> Alert khi inventory đầy fruits cần bán.<br><br>
+                                    <strong>Teleport Fruit Spawns:</strong> TP các spawn point fixed của fruits phổ biến.
+                                </p>
+                                <button class="read-more-btn" onclick="toggleScriptDesc(this)">
+                                    <span class="read-more-text">Xem thêm</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </div>
+                            <a href="https://yeulink.com/etgkUNO5OC" class="script-download-btn" data-script="utility">
+                                <i class="fas fa-download"></i>
+                                <span>Tải Script</span>
+                            </a>
+                        </div>
+
+                        <!-- HiruHub VeriV2 -->
+                        <div class="script-card" style="position: relative;">
+                            <div class="premium-badge" style="position: absolute; top: 15px; right: 15px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 6px 12px; border-radius: 20px; font-size: 11px; font-weight: 700; z-index: 10; box-shadow: 0 3px 10px rgba(245, 87, 108, 0.4); display: flex; align-items: center; gap: 5px;">
+                                <i class="fas fa-crown"></i>
+                                <span>PREMIUM</span>
+                            </div>
+                            <div class="script-header">
+                                <i class="fas fa-dragon"></i>
+                                <h3>HiruHub VeriV2 - FULL FEATURE</h3>
+                            </div>
+                            <div class="script-desc-wrapper">
+                                <div class="premium-notice" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 12px; border-radius: 8px; margin-bottom: 15px; text-align: center; font-weight: 600;">
+                                    <i class="fas fa-crown" style="margin-right: 8px;"></i>
+                                    <strong>Script Premium - Tính năng đầy đủ nhất!</strong>
+                                    <p style="margin: 8px 0 0 0; font-size: 13px; font-weight: 400; opacity: 0.95;">Nhấn nút "Tải Premium" bên dưới để tải script với đầy đủ tính năng cao cấp</p>
+                                </div>
+                                <p class="script-desc">
+                                    <strong>Auto Farm Level Full:</strong> Quest chain tự động mọi Sea.<br><br>
+                                    <strong>Auto Farm Boss/Raid:</strong> Kill mọi boss, clear raid/dungeon 100%.<br><br>
+                                    <strong>Auto Farm Fruit/Gear:</strong> Collect fruit, farm gear Factory/Dungeon.<br><br>
+                                    <strong>PvP Kill Aura:</strong> Attack auto 500 studs range, bounty hunt.<br><br>
+                                    <strong>ESP Full:</strong> Players, Fruits, Chests, Ships, NPCs.<br><br>
+                                    <strong>Movement Hacks:</strong> Fly, Speed, Infinite Jump, Noclip.<br><br>
+                                    <strong>Anti-AFK Advanced:</strong> Multi-method bypass.
+                                </p>
+                                <button class="read-more-btn" onclick="toggleScriptDesc(this)">
+                                    <span class="read-more-text">Xem thêm</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </div>
+                            <a href="https://yeulink.com/pvllLVbU1N" class="script-download-btn premium" data-script="premium">
+                                <i class="fas fa-download"></i>
+                                <span>Tải Premium</span>
+                            </a>
+                        </div>
+
+                        <!-- TsuoHub -->
+                        <div class="script-card" style="position: relative;">
+                            <div class="premium-badge" style="position: absolute; top: 15px; right: 15px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 6px 12px; border-radius: 20px; font-size: 11px; font-weight: 700; z-index: 10; box-shadow: 0 3px 10px rgba(245, 87, 108, 0.4); display: flex; align-items: center; gap: 5px;">
+                                <i class="fas fa-crown"></i>
+                                <span>PREMIUM</span>
+                            </div>
+                            <div class="script-header">
+                                <i class="fas fa-skull"></i>
+                                <h3>TsuoHub - COMBAT PVP FOCUS</h3>
+                            </div>
+                            <div class="script-desc-wrapper">
+                                <div class="premium-notice" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 12px; border-radius: 8px; margin-bottom: 15px; text-align: center; font-weight: 600;">
+                                    <i class="fas fa-crown" style="margin-right: 8px;"></i>
+                                    <strong>Script Premium - Tính năng đầy đủ nhất!</strong>
+                                    <p style="margin: 8px 0 0 0; font-size: 13px; font-weight: 400; opacity: 0.95;">Nhấn nút "Tải Premium" bên dưới để tải script với đầy đủ tính năng cao cấp</p>
+                                </div>
+                                <p class="script-desc">
+                                    <strong>Auto PvP Target Nearest:</strong> Lock + combo player gần nhất.<br><br>
+                                    <strong>Auto NPC Combat:</strong> Kill mobs Sea 3 nhanh nhất.<br><br>
+                                    <strong>Level Farm Sea 3:</strong> Optimized route Factory/Port Town.<br><br>
+                                    <strong>Auto Fruit Awaken:</strong> Full process Light/Magma/etc.<br><br>
+                                    <strong>Teleport Sea Events:</strong> Sea Beast/Law Raid instant.<br><br>
+                                    <strong>Speed Hacks:</strong> Run 400+ studs/s.
+                                </p>
+                                <button class="read-more-btn" onclick="toggleScriptDesc(this)">
+                                    <span class="read-more-text">Xem thêm</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </div>
+                            <a href="https://yeulink.com/Bh7o0izucX" class="script-download-btn premium" data-script="premium">
+                                <i class="fas fa-download"></i>
+                                <span>Tải Premium</span>
+                            </a>
+                        </div>
+
+                        <!-- xQuartyzScript -->
+                        <div class="script-card">
+                            <div class="script-header">
+                                <i class="fas fa-mobile-alt"></i>
+                                <h3>xQuartyzScript - MOBILE OPTIMIZED PIRATES</h3>
+                            </div>
+                            <div class="script-desc-wrapper">
+                                <p class="script-desc">
+                                    <strong>Auto Add Stats Points:</strong> Tự động phân bổ 100% stats theo ratio max melee/fruit/gun/defense khi level up.<br><br>
+                                    <strong>Teleport 50+ Islands:</strong> Instant TP Green Zone, Desert, Skylands, Fountain City, Port Town, Castle on the Sea, v.v.<br><br>
+                                    <strong>Teleport All Events:</strong> Sea Beast, Law Raid, Haunted Castle, Full Moon auto detect.<br><br>
+                                    <strong>Auto Farm Dungeon Sea 2:</strong> Kingdom of Rose dungeon full clear, fragments farm.<br><br>
+                                    <strong>Auto Farm Dungeon Sea 3:</strong> Port Town/Mansion dungeon 100% rewards.<br><br>
+                                    <strong>Auto Farm Gear 2nd Sea:</strong> Iron/Steel từ Factory auto.<br><br>
+                                    <strong>Auto Farm Gear 3rd Sea:</strong> Gold Gear từ advanced Factory.<br><br>
+                                    <strong>Touch UI Mobile:</strong> Buttons lớn, swipe-friendly, no lag Android/iOS.<br><br>
+                                    <strong>Low CPU Usage:</strong> Optimized cho mobile yếu, FPS stable 60.<br><br>
+                                    <strong>Auto Quest Chain:</strong> Full quest progression Sea 2/3.<br><br>
+                                    <strong>Fruit ESP Mobile:</strong> Highlight fruits với icon lớn dễ thấy.<br><br>
+                                    <strong>Player ESP:</strong> Tên/level/bounty hiển thị clear trên mobile.<br><br>
+                                    <strong>Fly Mobile:</strong> Touch joystick bay, speed 300+.<br><br>
+                                    <strong>Speed Hack Touch:</strong> Swipe tăng tốc chạy 500+.<br><br>
+                                    <strong>Noclip Mobile:</strong> Touch toggle xuyên tường.<br><br>
+                                    <strong>Anti-AFK Mobile:</strong> Background farm không disconnect.<br><br>
+                                    <strong>Server Hop Mobile:</strong> Auto join low ping servers.<br><br>
+                                    <strong>Pirates Team Auto:</strong> Set team Pirates optimized.
+                                </p>
+                                <button class="read-more-btn" onclick="toggleScriptDesc(this)">
+                                    <span class="read-more-text">Xem thêm</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </div>
+                            <a href="https://yeulink.com/ZqtwuKkrrk" class="script-download-btn" data-script="utility">
+                                <i class="fas fa-download"></i>
+                                <span>Tải Script</span>
+                            </a>
+                        </div>
+
+                        <!-- RaitoHub -->
+                        <div class="script-card" style="position: relative;" data-tier="premium">
+                            <div class="premium-badge" style="position: absolute; top: 15px; right: 15px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 6px 12px; border-radius: 20px; font-size: 11px; font-weight: 700; z-index: 10; box-shadow: 0 3px 10px rgba(245, 87, 108, 0.4); display: flex; align-items: center; gap: 5px;">
+                                <i class="fas fa-crown"></i>
+                                <span>PREMIUM</span>
+                            </div>
+                            <div class="script-header">
+                                <i class="fas fa-tasks"></i>
+                                <h3>RaitoHub - QUEST & RAID SPECIALIST</h3>
+                            </div>
+                            <div class="script-desc-wrapper">
+                                <p class="script-desc">
+                                    <strong>Auto Full Quest Chain:</strong> 100% quests mọi island tự động nhận-hoàn-thành.<br><br>
+                                    <strong>Auto Raid Join:</strong> Detect raid spawn → instant join Flame/Dark/Love.<br><br>
+                                    <strong>Auto Raid Farm:</strong> Clear full 6 waves, collect gems auto.<br><br>
+                                    <strong>Fruit Notifier Global:</strong> Alert mọi fruit Legendary/Mythical spawn server-wide.<br><br>
+                                    <strong>Fruit Snipe Auto:</strong> TP + pickup fruit tốt nhất ngay lập tức.<br><br>
+                                    <strong>Auto Dungeon Clear:</strong> Sea 2/3 dungeon full enemies + boss.<br><br>
+                                    <strong>Auto Awaken Fruits:</strong> Full awaken process Light/Flame/Ice/Magma/etc.<br><br>
+                                    <strong>Boss Farm All:</strong> Rip Indra, Dough King, Cursed Captain auto kill.<br><br>
+                                    <strong>Material Farm:</strong> Dragon Scale, Fish Tail, Magma Ore auto collect.<br><br>
+                                    <strong>Beli Farm:</strong> Quest + boss + sell fruits x2 speed.<br><br>
+                                    <strong>Teleport All Islands:</strong> 60+ locations instant.<br><br>
+                                    <strong>Teleport Sea Events:</strong> Mirage Island, Sea Beast real-time.<br><br>
+                                    <strong>ESP Fruits:</strong> Global fruit positions 5000+ studs.<br><br>
+                                    <strong>ESP Players:</strong> Wallhack full info (fruit/bounty/distance).<br><br>
+                                    <strong>Fly Speed 400+:</strong> Smooth flight control.<br><br>
+                                    <strong>Noclip/Walkspeed:</strong> Toggle full movement hacks.<br><br>
+                                    <strong>Pirates Optimized:</strong> Team Pirates quest priority.
+                                </p>
+                                <button class="read-more-btn" onclick="toggleScriptDesc(this)">
+                                    <span class="read-more-text">Xem thêm</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </div>
+                            <a href="https://oklink.cfd/premium-raito" class="script-download-btn premium" data-script="premium">
+                                <i class="fas fa-download"></i>
+                                <span>Tải Premium</span>
+                            </a>
+                        </div>
+
+                        <!-- Speed-Hub-X -->
+                        <div class="script-card">
+                            <div class="script-header">
+                                <i class="fas fa-running"></i>
+                                <h3>Speed-Hub-X - MOVEMENT HACKS EXTREME</h3>
+                            </div>
+                            <div class="script-desc-wrapper">
+                                <p class="script-desc">
+                                    <strong>Hyper Speed Run:</strong> 1000+ studs/second, vượt mọi player.<br><br>
+                                    <strong>Fly Speed 2000+:</strong> Bay siêu tốc infinite height.<br><br>
+                                    <strong>Swim Speed 1500+:</strong> Bơi xuyên sea events.<br><br>
+                                    <strong>Infinite Dash:</strong> Spam dash không cooldown.<br><br>
+                                    <strong>Infinite Jump:</strong> Nhảy liên tục không giới hạn.<br><br>
+                                    <strong>Instant Teleport All:</strong> TP mọi island/event 0.1s.<br><br>
+                                    <strong>Anti-Cheat Bypass:</strong> Basic Byfron dodge movement checks.<br><br>
+                                    <strong>Walkspeed Slider:</strong> Custom 16-5000 speed.<br><br>
+                                    <strong>Jumppower Slider:</strong> 50-10000 jump height.<br><br>
+                                    <strong>Fly Toggle:</strong> Hold key bay, mobile touch.<br><br>
+                                    <strong>Noclip Speed:</strong> Xuyên tường + tốc độ cao.<br><br>
+                                    <strong>Teleport Fruits:</strong> TP nearest fruit instant.<br><br>
+                                    <strong>Teleport Players:</strong> TP target player position.<br><br>
+                                    <strong>No Fall Damage:</strong> Nhảy từ sky island safe.<br><br>
+                                    <strong>Pirates Movement:</strong> Sea events optimized.
+                                </p>
+                                <button class="read-more-btn" onclick="toggleScriptDesc(this)">
+                                    <span class="read-more-text">Xem thêm</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </div>
+                            <a href="https://yeulink.com/RUZNmeQk1S" class="script-download-btn" data-script="utility">
+                                <i class="fas fa-download"></i>
+                                <span>Tải Script</span>
+                            </a>
+                        </div>
+
+                        <!-- BananaHub -->
+                        <div class="script-card" style="position: relative;">
+                            <div class="premium-badge" style="position: absolute; top: 15px; right: 15px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 6px 12px; border-radius: 20px; font-size: 11px; font-weight: 700; z-index: 10; box-shadow: 0 3px 10px rgba(245, 87, 108, 0.4); display: flex; align-items: center; gap: 5px;">
+                                <i class="fas fa-crown"></i>
+                                <span>PREMIUM</span>
+                            </div>
+                            <div class="script-header">
+                                <i class="fas fa-banana"></i>
+                                <h3>BananaHub - PREMIUM KEY SYSTEM</h3>
+                            </div>
+                            <div class="script-desc-wrapper">
+                                <div class="premium-notice" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 12px; border-radius: 8px; margin-bottom: 15px; text-align: center; font-weight: 600;">
+                                    <i class="fas fa-crown" style="margin-right: 8px;"></i>
+                                    <strong>Script Premium - Tính năng đầy đủ nhất!</strong>
+                                    <p style="margin: 8px 0 0 0; font-size: 13px; font-weight: 400; opacity: 0.95;">Nhấn nút "Tải Premium" bên dưới để tải script với đầy đủ tính năng cao cấp</p>
+                                </div>
+                                <p class="script-desc">
+                                    <strong>Key System:</strong> Edit "PASTEKEYHERE" lấy từ Discord/website.<br><br>
+                                    <strong>Premium Money Farm:</strong> x10 Beli speed từ mọi source.<br><br>
+                                    <strong>Premium Fruit Farm:</strong> Auto collect + store Legendary chỉ.<br><br>
+                                    <strong>Auto Mirage Island:</strong> Search + TP + farm Azure Embers.<br><br>
+                                    <strong>Auto Island of Light:</strong> Full quest + rewards.<br><br>
+                                    <strong>VIP Raid Mode:</strong> x2 gems Flame/Dark raids.<br><br>
+                                    <strong>VIP Dungeon Mode:</strong> Instant clear Sea 3.<br><br>
+                                    <strong>VIP Boss Mode:</strong> 1-hit kill all bosses.<br><br>
+                                    <strong>Fancy GUI:</strong> Animated tabs, themes, save config.<br><br>
+                                    <strong>Auto Stats VIP:</strong> Optimal melee/fruit ratio.<br><br>
+                                    <strong>Fruit Sniper VIP:</strong> Server-wide mythical only.<br><br>
+                                    <strong>ESP Premium:</strong> Colors + distance + fruit type.<br><br>
+                                    <strong>Fly VIP:</strong> 1000+ speed smooth.<br><br>
+                                    <strong>Kill Aura VIP:</strong> 1000 studs range.<br><br>
+                                    <strong>Server Hop VIP:</strong> Filter high bounty servers.<br><br>
+                                    <strong>Anti-Ban VIP:</strong> Advanced obfuscation.
+                                </p>
+                                <button class="read-more-btn" onclick="toggleScriptDesc(this)">
+                                    <span class="read-more-text">Xem thêm</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </div>
+                            <a href="https://yeulink.com/C5rzGsTeFT" class="script-download-btn premium" data-script="premium">
+                                <i class="fas fa-download"></i>
+                                <span>Tải Premium</span>
+                            </a>
+                        </div>
+
+                        <!-- CokkaHub -->
+                        <div class="script-card" style="position: relative;">
+                            <div class="premium-badge" style="position: absolute; top: 15px; right: 15px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 6px 12px; border-radius: 20px; font-size: 11px; font-weight: 700; z-index: 10; box-shadow: 0 3px 10px rgba(245, 87, 108, 0.4); display: flex; align-items: center; gap: 5px;">
+                                <i class="fas fa-crown"></i>
+                                <span>PREMIUM</span>
+                            </div>
+                            <div class="script-header">
+                                <i class="fas fa-shield-virus"></i>
+                                <h3>CokkaHub - LUARMOR PVP COMBAT</h3>
+                            </div>
+                            <div class="script-desc-wrapper">
+                                <div class="premium-notice" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 12px; border-radius: 8px; margin-bottom: 15px; text-align: center; font-weight: 600;">
+                                    <i class="fas fa-crown" style="margin-right: 8px;"></i>
+                                    <strong>Script Premium - Tính năng đầy đủ nhất!</strong>
+                                    <p style="margin: 8px 0 0 0; font-size: 13px; font-weight: 400; opacity: 0.95;">Nhấn nút "Tải Premium" bên dưới để tải script với đầy đủ tính năng cao cấp</p>
+                                </div>
+                                <p class="script-desc">
+                                    <strong>Luarmor Key:</strong> Click link lấy key miễn phí.<br><br>
+                                    <strong>Kill Aura 500 Studs:</strong> Auto attack mọi enemy range lớn.<br><br>
+                                    <strong>Auto Bounty Hunt:</strong> Target high bounty Pirates players.<br><br>
+                                    <strong>Team Pirates Check:</strong> Chỉ farm Pirates side.<br><br>
+                                    <strong>Aimbot Perfect:</strong> 100% hit gun/sniper fruits.<br><br>
+                                    <strong>PvP Combo Auto:</strong> Full combo ZXC moves target.<br><br>
+                                    <strong>Player Lock:</strong> Lock nearest enemy auto fight.<br><br>
+                                    <strong>ESP Combat:</strong> Enemy health/mana/distance.<br><br>
+                                    <strong>Speed PvP:</strong> 600+ combat speed.<br><br>
+                                    <strong>Fly Combat:</strong> Aerial PvP advantage.<br><br>
+                                    <strong>Noclip Fight:</strong> Dodge attacks xuyên tường.<br><br>
+                                    <strong>Anti-Knockback:</strong> Không bị đẩy khi hit.<br><br>
+                                    <strong>Godmode Toggle:</strong> Reduced damage taken.<br><br>
+                                    <strong>Teleport Enemy:</strong> TP behind target.<br><br>
+                                    <strong>Bounty Farm:</strong> Auto gain bounty kills.
+                                </p>
+                                <button class="read-more-btn" onclick="toggleScriptDesc(this)">
+                                    <span class="read-more-text">Xem thêm</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </div>
+                            <a href="https://yeulink.com/kD51sryiJX" class="script-download-btn premium" data-script="premium">
+                                <i class="fas fa-download"></i>
+                                <span>Tải Premium</span>
+                            </a>
+                        </div>
+
+                        <!-- Luarmor Loader -->
+                        <div class="script-card" style="position: relative;">
+                            <div class="premium-badge" style="position: absolute; top: 15px; right: 15px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 6px 12px; border-radius: 20px; font-size: 11px; font-weight: 700; z-index: 10; box-shadow: 0 3px 10px rgba(245, 87, 108, 0.4); display: flex; align-items: center; gap: 5px;">
+                                <i class="fas fa-crown"></i>
+                                <span>PREMIUM</span>
+                            </div>
+                            <div class="script-header">
+                                <i class="fas fa-shield-alt"></i>
+                                <h3>Luarmor Loader - ADVANCED PROTECTED</h3>
+                            </div>
+                            <div class="script-desc-wrapper">
+                                <div class="premium-notice" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 12px; border-radius: 8px; margin-bottom: 15px; text-align: center; font-weight: 600;">
+                                    <i class="fas fa-crown" style="margin-right: 8px;"></i>
+                                    <strong>Script Premium - Tính năng đầy đủ nhất!</strong>
+                                    <p style="margin: 8px 0 0 0; font-size: 13px; font-weight: 400; opacity: 0.95;">Nhấn nút "Tải Premium" bên dưới để tải script với đầy đủ tính năng cao cấp</p>
+                                </div>
+                                <p class="script-desc">
+                                    <strong>Luarmor Protection:</strong> Anti-decompile + tamper proof.<br><br>
+                                    <strong>Advanced Farm:</strong> All-in-one level/boss/fruit.<br><br>
+                                    <strong>Anti-Detection:</strong> Byfron bypass obfuscated.<br><br>
+                                    <strong>Auto Keyless:</strong> No manual key entry.<br><br>
+                                    <strong>Full ESP Suite:</strong> Players/fruits/chests/ships.<br><br>
+                                    <strong>Movement Full:</strong> Fly/speed/noclip.<br><br>
+                                    <strong>Combat Auto:</strong> Kill aura + aimbot.<br><br>
+                                    <strong>Teleport Complete:</strong> 60+ locations.<br><br>
+                                    <strong>Server Tools:</strong> Hop + crash protection.<br><br>
+                                    <strong>Pirates Variant:</strong> Team optimized.
+                                </p>
+                                <button class="read-more-btn" onclick="toggleScriptDesc(this)">
+                                    <span class="read-more-text">Xem thêm</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </div>
+                            <a href="https://yeulink.com/rmCdFYN5d1" class="script-download-btn premium" data-script="premium">
+                                <i class="fas fa-download"></i>
+                                <span>Tải Premium</span>
+                            </a>
+                        </div>
+
+                        <!-- MinHub v4 -->
+                        <div class="script-card" style="position: relative;" data-tier="premium">
+                            <div class="premium-badge" style="position: absolute; top: 15px; right: 15px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 6px 12px; border-radius: 20px; font-size: 11px; font-weight: 700; z-index: 10; box-shadow: 0 3px 10px rgba(245, 87, 108, 0.4); display: flex; align-items: center; gap: 5px;">
+                                <i class="fas fa-crown"></i>
+                                <span>PREMIUM</span>
+                            </div>
+                            <div class="script-header">
+                                <i class="fas fa-feather-alt"></i>
+                                <h3>MinHub v4 - LIGHTWEIGHT NO KEY</h3>
+                            </div>
+                            <div class="script-desc-wrapper">
+                                <p class="script-desc">
+                                    <strong>No Key Required:</strong> Paste chạy ngay.<br><br>
+                                    <strong>Auto Farm Level:</strong> Basic quest chain.<br><br>
+                                    <strong>Auto Farm Fruit:</strong> Nearest fruit collect.<br><br>
+                                    <strong>Teleport Basics:</strong> Main islands only.<br><br>
+                                    <strong>Fly Simple:</strong> Toggle on/off.<br><br>
+                                    <strong>Speed Basic:</strong> 200+ walkspeed.<br><br>
+                                    <strong>ESP Minimal:</strong> Fruits + players.<br><br>
+                                    <strong>Lightweight:</strong> 1MB load, no lag.<br><br>
+                                    <strong>Stable:</strong> Rarely crashes.<br><br>
+                                    <strong>Mobile OK:</strong> Works Android.
+                                </p>
+                                <button class="read-more-btn" onclick="toggleScriptDesc(this)">
+                                    <span class="read-more-text">Xem thêm</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </div>
+                            <a href="https://yeulink.com/MHw5iaMm2R" class="script-download-btn premium" data-script="premium">
+                                <i class="fas fa-download"></i>
+                                <span>Tải Premium</span>
+                            </a>
+                        </div>
+
+                        <!-- MinMasEng -->
+                        <div class="script-card">
+                            <div class="script-header">
+                                <i class="fas fa-graduation-cap"></i>
+                                <h3>MinMasEng - MASTERY ENGINE</h3>
+                            </div>
+                            <div class="script-desc-wrapper">
+                                <p class="script-desc">
+                                    <strong>Auto Mastery 100%:</strong> Train Z/X/C/V all fruits/swords/guns.<br><br>
+                                    <strong>Dummy Spam:</strong> Infinite moves trên training dummy.<br><br>
+                                    <strong>Mob Mastery:</strong> Kill mobs spam skills.<br><br>
+                                    <strong>Progress Tracker:</strong> % mastery real-time.<br><br>
+                                    <strong>Priority High Value:</strong> Max Dragon/Light moves first.<br><br>
+                                    <strong>No GUI:</strong> Background only.<br><br>
+                                    <strong>Low Detection:</strong> Stealth training.
+                                </p>
+                                <button class="read-more-btn" onclick="toggleScriptDesc(this)">
+                                    <span class="read-more-text">Xem thêm</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </div>
+                            <a href="https://yeulink.com/A6HK1MYlJN" class="script-download-btn" data-script="utility">
+                                <i class="fas fa-download"></i>
+                                <span>Tải Script</span>
+                            </a>
+                        </div>
+
+                        <!-- Dragon-Hub -->
+                        <div class="script-card" style="position: relative;">
+                            <div class="premium-badge" style="position: absolute; top: 15px; right: 15px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 6px 12px; border-radius: 20px; font-size: 11px; font-weight: 700; z-index: 10; box-shadow: 0 3px 10px rgba(245, 87, 108, 0.4); display: flex; align-items: center; gap: 5px;">
+                                <i class="fas fa-crown"></i>
+                                <span>PREMIUM</span>
+                            </div>
+                            <div class="script-header">
+                                <i class="fas fa-dragon"></i>
+                                <h3>Dragon-Hub - DRAGON FRUIT SPECIAL</h3>
+                            </div>
+                            <div class="script-desc-wrapper">
+                                <div class="premium-notice" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 12px; border-radius: 8px; margin-bottom: 15px; text-align: center; font-weight: 600;">
+                                    <i class="fas fa-crown" style="margin-right: 8px;"></i>
+                                    <strong>Script Premium - Tính năng đầy đủ nhất!</strong>
+                                    <p style="margin: 8px 0 0 0; font-size: 13px; font-weight: 400; opacity: 0.95;">Nhấn nút "Tải Premium" bên dưới để tải script với đầy đủ tính năng cao cấp</p>
+                                </div>
+                                <p class="script-desc">
+                                    <strong>Dragon Auto Combo:</strong> Z-X-C-V full combo infinite.<br><br>
+                                    <strong>Dragon Skills Farm:</strong> Mastery Dragon 100%.<br><br>
+                                    <strong>Dragon Raid Farm:</strong> Auto join Dragon raids.<br><br>
+                                    <strong>Dragon Teleports:</strong> All Dragon spawn points.<br><br>
+                                    <strong>PvP Dragon:</strong> Optimized Dragon PvP.<br><br>
+                                    <strong>Dragon Stats:</strong> Max fruit stats.<br><br>
+                                    <strong>Dragon ESP:</strong> Track Dragon users.<br><br>
+                                    <strong>Dragon Aimbot:</strong> Perfect Dragon aim.
+                                </p>
+                                <button class="read-more-btn" onclick="toggleScriptDesc(this)">
+                                    <span class="read-more-text">Xem thêm</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </div>
+                            <a href="https://yeulink.com/247jnbSJyg" class="script-download-btn premium" data-script="premium">
+                                <i class="fas fa-download"></i>
+                                <span>Tải Premium</span>
+                            </a>
+                        </div>
+
+                        <!-- Zee-Hub-VIP -->
+                        <div class="script-card" style="position: relative;">
+                            <div class="premium-badge" style="position: absolute; top: 15px; right: 15px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 6px 12px; border-radius: 20px; font-size: 11px; font-weight: 700; z-index: 10; box-shadow: 0 3px 10px rgba(245, 87, 108, 0.4); display: flex; align-items: center; gap: 5px;">
+                                <i class="fas fa-crown"></i>
+                                <span>PREMIUM</span>
+                            </div>
+                            <div class="script-header">
+                                <i class="fas fa-crown"></i>
+                                <h3>Zee-Hub-VIP - FULL VIP PACKAGE</h3>
+                            </div>
+                            <div class="script-desc-wrapper">
+                                <div class="premium-notice" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 12px; border-radius: 8px; margin-bottom: 15px; text-align: center; font-weight: 600;">
+                                    <i class="fas fa-crown" style="margin-right: 8px;"></i>
+                                    <strong>Script Premium - Tính năng đầy đủ nhất!</strong>
+                                    <p style="margin: 8px 0 0 0; font-size: 13px; font-weight: 400; opacity: 0.95;">Nhấn nút "Tải Premium" bên dưới để tải script với đầy đủ tính năng cao cấp</p>
+                                </div>
+                                <p class="script-desc">
+                                    <strong>VIP Auto Farm:</strong> Everything x5 speed.<br><br>
+                                    <strong>VIP Fruit Finder:</strong> Mythical guaranteed.<br><br>
+                                    <strong>VIP Anti-Detect:</strong> Byfron level protection.<br><br>
+                                    <strong>Premium GUI:</strong> 10+ tabs animated.<br><br>
+                                    <strong>All Teleports:</strong> 70+ locations.<br><br>
+                                    <strong>Full ESP:</strong> Everything tracked.<br><br>
+                                    <strong>Godmode VIP:</strong> Invincible mode.<br><br>
+                                    <strong>1-Hit Kill:</strong> Bosses/mobs instant.<br><br>
+                                    <strong>Auto Buy:</strong> Best fruits/gear.
+                                </p>
+                                <button class="read-more-btn" onclick="toggleScriptDesc(this)">
+                                    <span class="read-more-text">Xem thêm</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </div>
+                            <a href="https://yeulink.com/chftA8bQ05" class="script-download-btn premium" data-script="premium">
+                                <i class="fas fa-download"></i>
+                                <span>Tải Premium</span>
+                            </a>
+                        </div>
+
+                        <!-- QuantumOnyx -->
+                        <div class="script-card" style="position: relative;">
+                            <div class="premium-badge" style="position: absolute; top: 15px; right: 15px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 6px 12px; border-radius: 20px; font-size: 11px; font-weight: 700; z-index: 10; box-shadow: 0 3px 10px rgba(245, 87, 108, 0.4); display: flex; align-items: center; gap: 5px;">
+                                <i class="fas fa-crown"></i>
+                                <span>PREMIUM</span>
+                            </div>
+                            <div class="script-header">
+                                <i class="fas fa-meteor"></i>
+                                <h3>QuantumOnyx - KEYLESS & 40+ FEATURES</h3>
+                            </div>
+                            <div class="script-desc-wrapper">
+                                <div class="premium-notice" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; padding: 12px; border-radius: 8px; margin-bottom: 15px; text-align: center; font-weight: 600;">
+                                    <i class="fas fa-crown" style="margin-right: 8px;"></i>
+                                    <strong>Script Premium - Tính năng đầy đủ nhất!</strong>
+                                    <p style="margin: 8px 0 0 0; font-size: 13px; font-weight: 400; opacity: 0.95;">Nhấn nút "Tải Premium" bên dưới để tải script với đầy đủ tính năng cao cấp</p>
+                                </div>
+                                <p class="script-desc">
+                                    <strong>Auto Farm Level:</strong> Tự động quest chain full Sea 1-3, farm XP max tốc độ 24/7.<br><br>
+                                    <strong>Auto Farm Boss:</strong> Hunt + kill tất cả boss (Mr. Stone, Cake Queen, Rip Indra, Dough King).<br><br>
+                                    <strong>Auto Bounty:</strong> Farm bounty từ players PvP tự động.<br><br>
+                                    <strong>Fruit Sniper:</strong> Detect + TP fruit Legendary/Mythical server-wide.<br><br>
+                                    <strong>Fruit Teleporter:</strong> TP đến fruit spawn gần nhất instant.<br><br>
+                                    <strong>Fruit Rain:</strong> Auto collect fruits rơi từ sky events.<br><br>
+                                    <strong>Auto Mastery:</strong> Spam moves max mastery fruits/swords/guns.<br><br>
+                                    <strong>Auto Chest Farm:</strong> Farm treasure chests tất cả map (caveats: tránh crowded areas).<br><br>
+                                    <strong>Auto Item Farm:</strong> Yama sword, Skull Guitar quest, materials cụ thể (Dragon Scale).<br><br>
+                                    <strong>Task Farm:</strong> Hoàn thành tất cả tasks auto.<br><br>
+                                    <strong>Sea Events Auto:</strong> Mirage Island, Kitsune event farm full.<br><br>
+                                    <strong>Dragon Update Farm:</strong> Auto dungeons Dragon, progress full.<br><br>
+                                    <strong>Auto Store Fruits:</strong> Lưu fruits tốt vào inventory auto.<br><br>
+                                    <strong>Auto Roll Fruits:</strong> Spin RNG fruits liên tục.<br><br>
+                                    <strong>Fruit Notification:</strong> Alert + name fruit spawn (rare/mythical).<br><br>
+                                    <strong>V4 Race Trials Auto:</strong> Hoàn thành V4 awakening trials full.<br><br>
+                                    <strong>Draco Trial 2 Auto:</strong> Draco race trials tự động.<br><br>
+                                    <strong>Fast M1 Attack:</strong> Click attack siêu nhanh.<br><br>
+                                    <strong>Fast Attack Speed:</strong> Tăng tốc combo moves.<br><br>
+                                    <strong>Prehistoric Support:</strong> Update mới fruits/tools.<br><br>
+                                    <strong>ESP Players:</strong> Wallhack tên/level/bounty/fruit.<br><br>
+                                    <strong>ESP Islands:</strong> Highlight islands/events.<br><br>
+                                    <strong>Teleport Tool:</strong> TP mọi nơi với tool trong inventory (pyramid top, etc.).<br><br>
+                                    <strong>Halloween Event:</strong> Farm max rewards events theo mùa.<br><br>
+                                    <strong>Smooth GUI Onyx:</strong> Clean advanced UI, toggle tabs.<br><br>
+                                    <strong>Quest Auto Default:</strong> Farm quest theo progress game hiện tại.<br><br>
+                                    <strong>Boss Select:</strong> Chọn boss cụ thể (Cake Queen/Stone).<br><br>
+                                    <strong>Dungeon Auto:</strong> Clear Sea 2/3 dungeons.<br><br>
+                                    <strong>Race Awakening:</strong> Auto progress race V3/V4.<br><br>
+                                    <strong>Anti-AFK:</strong> Không kick farm overnight.
+                                </p>
+                                <button class="read-more-btn" onclick="toggleScriptDesc(this)">
+                                    <span class="read-more-text">Xem thêm</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </button>
+                            </div>
+                            <a href="https://yeulink.com/sCxVmaJwQ7" class="script-download-btn premium" data-script="premium">
+                                <i class="fas fa-download"></i>
                                 <span>Tải Premium</span>
                             </a>
                         </div>
@@ -833,6 +1584,45 @@
             <!-- End Script Roblox Tab -->
 
             <!-- Tab Content: Guide -->
+            <!-- Tab Content: Executor PC -->
+            <div class="tab-content" id="executor-pc-tab">
+                <section class="download-section">
+                    <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 20px;">
+                        <h2 class="section-title" style="margin-bottom: 0;"><i class="fas fa-desktop"></i> Tải Executor Tools (PC)</h2>
+                    </div>
+                    
+                    <div class="executors-grid">
+                        <!-- Wave Executor -->
+                        <div class="executor-card">
+                            <div class="executor-header">
+                                <span class="executor-icon" style="background: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);">W</span>
+                                <h3>Wave Executor</h3>
+                            </div>
+                            <div class="executor-desc" style="margin-bottom: 15px; font-size: 14px; color: #4a5568;">
+                                <p>Executor PC mạnh mẽ, hỗ trợ nhiều script, giao diện hiện đại.</p>
+                            </div>
+                            <a href="https://oklink.cfd/wave-pc" class="executor-link" style="display: block; text-align: center;">
+                                <i class="fas fa-download"></i> Tải Xuống
+                            </a>
+                        </div>
+
+                        <!-- Solara Executor -->
+                        <div class="executor-card">
+                            <div class="executor-header">
+                                <span class="executor-icon" style="background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);">S</span>
+                                <h3>Solara Executor</h3>
+                            </div>
+                            <div class="executor-desc" style="margin-bottom: 15px; font-size: 14px; color: #4a5568;">
+                                <p>Executor PC miễn phí, nhẹ, dễ sử dụng, bypass byfron tốt.</p>
+                            </div>
+                            <a href="https://oklink.cfd/solara-pc" class="executor-link" style="display: block; text-align: center;">
+                                <i class="fas fa-download"></i> Tải Xuống
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
             <div class="tab-content" id="guide-tab">
                 <div class="table-of-contents">
                     <h4 class="toc-toggle" onclick="toggleTOC(this)">
@@ -851,11 +1641,7 @@
                     <div class="content-box">
                         <p>Dưới đây là video hướng dẫn chi tiết cách vượt link để tải Script và Executor:</p>
                         <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; border-radius: 12px; margin-top: 15px; background: #000;">
-                            <!-- Placeholder for video, can be replaced with iframe -->
-                            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: white; flex-direction: column;">
-                                <i class="fab fa-youtube" style="font-size: 48px; margin-bottom: 10px; color: #ff0000;"></i>
-                                <span>Video Hướng Dẫn (Đang cập nhật)</span>
-                            </div>
+                            <iframe src="https://streamable.com/e/7v670i" title="Video Hướng Dẫn Vượt Link" style="position: absolute; top:0; left:0; width:100%; height:100%; border:0;" allowfullscreen></iframe>
                         </div>
                     </div>
                 </section>
@@ -889,6 +1675,151 @@
             </div>
             <!-- End Guide Tab -->
         </main>
+
+        <!-- Reviews Section -->
+        <section class="reviews-section">
+            <div class="reviews-container">
+                <h2 class="reviews-title"><i class="fas fa-star"></i> Đánh Giá Từ Người Dùng</h2>
+                <p class="reviews-subtitle">Hàng ngàn người dùng đã tin tưởng và trải nghiệm dịch vụ của chúng tôi</p>
+                
+                <div class="reviews-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">4.9</div>
+                        <div class="stat-label">Trung bình</div>
+                        <div class="stat-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">10k+</div>
+                        <div class="stat-label">Người dùng</div>
+                        <div class="stat-icon"><i class="fas fa-users"></i></div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Hài lòng</div>
+                        <div class="stat-icon"><i class="fas fa-thumbs-up"></i></div>
+                    </div>
+                </div>
+
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="reviewer-details">
+                                    <div class="reviewer-name">Nguyễn Văn A</div>
+                                    <div class="review-date">2 ngày trước</div>
+                                </div>
+                            </div>
+                            <div class="review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <p>"Rất tuyệt vời! Script chạy mượt, không lag. Executor ổn định, hỗ trợ cả VNG. Admin rất nhiệt tình, hỗ trợ nhanh chóng. Sẽ tiếp tục ủng hộ!"</p>
+                        </div>
+                        <div class="review-actions">
+                            <button class="helpful-btn"><i class="fas fa-thumbs-up"></i> Hữu ích (24)</button>
+                            <button class="reply-btn"><i class="fas fa-reply"></i> Trả lời</button>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="reviewer-details">
+                                    <div class="reviewer-name">Trần Thị B</div>
+                                    <div class="review-date">1 tuần trước</div>
+                                </div>
+                            </div>
+                            <div class="review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <p>"Đã dùng thử PunkX và DeltaX, cả hai đều rất tốt. Link tải an toàn, không virus. Hướng dẫn vượt link chi tiết, dễ hiểu. Cảm ơn admin!"</p>
+                        </div>
+                        <div class="review-actions">
+                            <button class="helpful-btn"><i class="fas fa-thumbs-up"></i> Hữu ích (18)</button>
+                            <button class="reply-btn"><i class="fas fa-reply"></i> Trả lời</button>
+                        </div>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="reviewer-details">
+                                    <div class="reviewer-name">Lê Văn C</div>
+                                    <div class="review-date">2 tuần trước</div>
+                                </div>
+                            </div>
+                            <div class="review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="review-content">
+                            <p>"Script đa dạng, cập nhật liên tục. FluxusZ chạy ổn định trên máy mình. Chỉ mong admin thêm nhiều script cho game mới hơn. Overall rất tốt!"</p>
+                        </div>
+                        <div class="review-actions">
+                            <button class="helpful-btn"><i class="fas fa-thumbs-up"></i> Hữu ích (15)</button>
+                            <button class="reply-btn"><i class="fas fa-reply"></i> Trả lời</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="add-review">
+                    <h3><i class="fas fa-edit"></i> Chia Sẻ Trải Nghiệm Của Bạn</h3>
+                    <div class="review-form">
+                        <div class="form-group">
+                            <label for="review-name">Tên của bạn</label>
+                            <input type="text" id="review-name" placeholder="Nhập tên của bạn">
+                        </div>
+                        <div class="form-group">
+                            <label for="review-rating">Đánh giá</label>
+                            <div class="rating-input">
+                                <i class="far fa-star" data-rating="1"></i>
+                                <i class="far fa-star" data-rating="2"></i>
+                                <i class="far fa-star" data-rating="3"></i>
+                                <i class="far fa-star" data-rating="4"></i>
+                                <i class="far fa-star" data-rating="5"></i>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="review-content">Nhận xét của bạn</label>
+                            <textarea id="review-content" rows="4" placeholder="Chia sẻ trải nghiệm của bạn về dịch vụ của chúng tôi..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-review-btn">
+                            <i class="fas fa-paper-plane"></i> Gửi Đánh Giá
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <footer>
             <p>&copy; 2024 Roblox Download. Tất cả quyền được bảo lưu.</p>
